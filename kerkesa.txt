@@ -1,0 +1,18 @@
+Kerkesat per projekt - Gjeneratat e reja 2017/2018
+
+/?2.Te kete login dhe register -> si dhe gjate procesit te logimit te kete role psh admin dhe perdorues i thjesht.
+
+??3.Varesisht faqeve qe keni p.sh News/Portfolio/Products etj te jane teresisht te populluara nga databaza dhe gjate regjistrimit te te 
+    dhenave te eshte e mundshme te shihet se cili perdorues ka shtuar/modifikuar nje lajm, produkt varesisht llojit te faqes si dhe ne 
+    keto raste te kete tekst dhe foto ne lajmin/produktin e shtuar ose pdf file, te dhenat nga faqja me kontakt form te ruhen ne databaze 
+    dhe te kete mundesi me u lexu nga administratori me vone nga pjesa e Dashboard.
+
+/?4.Te kete nje dashboard te thjesht per administratorin i cili menaxhon faqen me loginin e tij me te drejtat specifike te tij.
+
+/?5.Ne faqen kryesore, ne about us dhe pothuajse ne secilin faqe te dhenat te lexohen nga databaza dmth mos te kete shume permbajtje 
+    statike ne pergjithesi.
+
+??6.Te kete validim te te dhenave ne front end dhe backend si dhe kodi ne PHP te jete i shkruar bazuar ne Objtekte: Object Oriented PHP
+
+
+

@@ -1,0 +1,132 @@
+/*Ben kufizimin e faqes*/
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*Header - dizajni i pjeses larte*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    padding: 25px 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*Header - i pjeses larte (ngjyra e zeze transparente)*/
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -1;
+    opacity: .5;
+}
+
+/*Header - pozicioni i logos*/
+header .logo {
+    float: left;
+    height: 70px;
+}
+
+/*Header - gjesresia e logos*/
+header .logo img {
+    height: 100%;
+    width: auto;
+}
+
+/*Header - distanca e box-it dhe menu-se*/
+.margin-r-10 {
+    margin-left: 5%;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+/*Header - menu-ja*/
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color:white;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+/*Header - krijon nje label*/
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+/*Header - e pen check-box-in te mos shihet*/
+#toggle {
+    display: none;
+}
+
+/*Header - ndrron kur zvogelovet faqja*/
+@media only screen and (max-width: 940px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+
+/*Header - padding brrenda box-it*/
+.padding-lr-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+
+
+
+/*Header - box-i ne te djathte*/
+.Number-Box {
+    text-align: center;
+    height: 55px;
+    line-height: 53px;
+    border: 1px solid #EF0031;
+    border-radius: 2px;
+    color: #FFFFFF; 
+}
+
+/*Headeri pjesa poshte - jep ngjyre te bardhe*/
+.color-white {
+    color: #fff;
+}
+/*Header - pozita e box-it*/
+.right-area {
+    float: right;
+    bottom: -20;
+    height: 80%;
+    height: 70px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 1.5em;
+}

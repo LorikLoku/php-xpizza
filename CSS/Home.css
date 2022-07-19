@@ -1,0 +1,302 @@
+
+/*Headeri pjesa poshte - foto-ja*/
+.background-1 { 
+    background: url(../images/h1.jpg) 
+    no-repeat center;
+    background-size: cover; 
+    height: 800px;
+}
+
+/*Headeri pjesa poshte*/
+.main-slider{ 
+    position: relative; 
+    z-index: 1; 
+}
+
+/*Headeri pjesa poshte - e ben hijezimin e fotos*/
+.main-slider:after{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: -1; /*hijezimi nuk ndikon te teksti*/
+    background: rgba(0,0,0,.3); 
+}
+
+/*Kryen funksion te tere faqja*/
+.position-relative { 
+    position: relative; 
+    z-index: 1; 
+}
+
+
+/*Header - pozita e box-it*/
+.right-area {
+    float: right;
+    bottom: -20;
+    height: 80%;
+    height: 70px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 1.5em;
+}
+
+/*Header - nese gjeresia ndrron box-i largohet*/
+@media only screen and (max-width: 940px) {
+    .right-area {
+        display: none;
+    }
+}
+
+/*Header pjesa poshte - lartesia e tekstit*/
+.height-100 {
+    height: 100%;
+}
+
+/*Lartesia e testiti ndrron nese gjeresia ndrron*/
+@media only screen and (max-width: 940px) {
+    .height-100 {
+        height: 1050px;
+    }
+}
+
+
+/*Header pjesa poshte - e paraqet kontentin si tabele*/
+.table-model { 
+    display: table;  
+    height: 100%; 
+    width: 100%;
+}
+
+/*Header pjesa poshte - e paraqet kontentin si tabele*/
+.display-table-cell {
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+/*Header pjesa poshte*/
+.margin-t-30 {
+    margin-top: 30px;
+}
+
+/*Header pjesa poshte*/
+.margin-b-15 {
+    margin-bottom: 15px;
+}
+
+/*Llogo ne pjesen pas header-it*/
+.heading-img {
+    height: auto;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.center-text{ 
+    text-align: center; 
+}
+
+/* ----------------------------------- */
+
+/*Header pjesa poshte - padding brenda butonit*/
+.padding-lr-25{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*Header pjesa poshte - butoni dhe dizajni*/
+.menu-btn{ 
+    position: relative; 
+    text-align: center; 
+    height: 55px; 
+    line-height: 50px;  
+    border-radius: 3px;
+
+}
+
+/*Foto dhe dizajni i saj*/
+.background-2 { 
+    background: url(../images/cheese.jpg)
+    no-repeat center;
+    background-size: 100%;
+    width: 20%;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    z-index: -1;
+ }
+
+/*Foto dhe dizajni i saj*/ 
+.background-3 {  
+    background: url(../images/tomato.jpg)
+    no-repeat center; 
+    background-size: 100%;
+    width: 20%;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    z-index: -1;
+}
+
+/*Pjesa pas header-it - cakton paddingun e teksteve*/
+.row {
+    padding-left: 40px;
+    padding-right: 40px;
+} 
+
+/*Pjesa pas header-it - cakton hapesiren mes teksteve*/
+.margin-b-30 {
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------ */
+
+/*Footer - ben hijezimin e fotos*/
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -1;
+    opacity: .6;
+}
+
+/*Footer - cakton padingun*/
+.footer-padding {
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+/*Footer - cakton largesine mes elementeve*/
+.padding-t-30 {
+    padding-top: 30px;
+}
+
+/*Footer - cakton largesine mes elementeve*/
+.margin-b-10{
+    margin-bottom: 10px;
+}
+
+/*Footer - fotoja dhe dizajni*/
+footer{ 
+    background: url("../images/footer.jpg") no-repeat; 
+    background-size: cover;  
+    position: relative;  
+    text-align: center;
+    z-index: 1;  
+    font-size: 1.3em; 
+}
+
+/*Footer - ngjyra e paragrafeve*/
+footer,footer p{ 
+    color: #FFFFFF; 
+}
+
+/*Footer - madhesia e logos*/
+#logo-f-size{
+    width: 50px;        
+}
+
+/* ------------------------------------- */
+
+/*Dizajn i pergjithshem*/
+
+body{
+    margin: auto;
+    padding: auto;
+}
+
+body { 
+    font-size: 14px; 
+    font-family: 'Open Sans', sans-serif; 
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    font-weight: 400; 
+}
+
+h1, h2, h5, p, a, ul, li, img{ 
+    margin: 0; 
+    padding: 0; 
+}
+
+h1, h2, h5{
+    line-height: 1.5; 
+    font-weight: inherit;
+}
+
+h1, h2, .font-beyond {
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+}
+
+p { 
+    line-height: 1.7;
+    font-size: 1.05em; 
+    font-weight: 400; 
+    color: #555; 
+}
+
+h1 { 
+    font-size: 7.5em; 
+    line-height: 1.4; 
+}
+
+h2 { 
+    font-size: 4em; 
+    line-height: 1.4; 
+}
+
+h5 { 
+    font-size: 1.3em; 
+}
+
+a{ 
+    display: inline-block; 
+    text-decoration: none; 
+    color: inherit; 
+    line-height: 1.5; 
+    -webkit-transition: all .25s ease-in-out; 
+    transition: all .25s ease-in-out;
+}
+
+a:focus, a:active, a:hover,
+a b.light-color:hover { 
+    text-decoration: none; 
+    color: orange;
+}
+
+b {  
+    font-weight: 700; 
+}
+
+img { 
+    width: 100%;
+}
+
+li { 
+    list-style: none; 
+    display: inline-block; 
+    line-height: 2; 
+    font-size: 1.1em; 
+}
+
+b.max-bold { 
+    font-weight: 700; 
+}
+
+section {
+    padding: 100px 0 70px;
+}
+
+/*Ndikon ne largesine mes elementeve ne hapsiren pas heading-ut*/
+.heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}

@@ -1,0 +1,100 @@
+body{
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif; 
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: #525257;
+    background-color: #fbfafa;
+}
+
+.container{
+	background-color: #fbfafa;
+    margin: 0 auto;
+	min-height:630px; 
+	padding-top: 60px;
+}
+
+.login-main{
+	background-color: #ffffff;
+	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    color: #555;
+}
+
+.login-secondary{
+	text-align: center;
+}
+
+.login-main, .login-secondary{
+	margin-left: 30%;
+	border-radius: 4px;
+	width: 350px;
+	margin-top: 10px;
+	padding: 10px 5%;
+}
+
+.help-div{
+	text-align: center;
+	color: #bababc;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+}
+
+a{
+	color: #5099de;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #5099de;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+label{
+	width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

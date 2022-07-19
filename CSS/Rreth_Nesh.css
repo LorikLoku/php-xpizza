@@ -1,0 +1,487 @@
+/*Headeri pjesa poshte - foto-ja*/
+.background-1 { 
+    background: url(../images/h2.jpg) 
+    no-repeat center;
+    background-size: cover; 
+    height: 600px;
+}
+
+/*Headeri pjesa poshte*/
+.main-slider{ 
+    position: relative; 
+    z-index: 1; 
+}
+
+/*Headeri pjesa poshte - e ben hijezimin e fotos*/
+.main-slider:after{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: -1; /*hijezimi nuk ndikon te teksti*/
+    background: rgba(0,0,0,.3); 
+}
+
+/*Kryen funksion te tere faqja*/
+.position-relative { 
+    position: relative; 
+    z-index: 1; 
+}
+
+/*Header - pozita e box-it*/
+.right-area {
+    float: right;
+    bottom: -20;
+    height: 80%;
+    height: 70px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 1.5em;
+}
+
+/*Header - nese gjeresia ndrron box-i largohet*/
+@media only screen and (max-width: 940px) {
+    .right-area {
+        display: none;
+    }
+}
+
+/*Header pjesa poshte - lartesia e tekstit*/
+.height-100 {
+    height: 100%;
+}
+
+/*Lartesia e testiti ndrron nese gjeresia ndrron*/
+@media only screen and (max-width: 940px) {
+    .height-100 {
+        height: 1050px;
+    }
+}
+
+/*Header pjesa poshte - e paraqet kontentin si tabele*/
+.table-model { 
+    display: table;  
+    height: 100%; 
+    width: 100%;
+}
+
+/*Header pjesa poshte - e paraqet kontentin si tabele*/
+.display-table-cell {
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+/*Header pjesa poshte*/
+.margin-t-30 {
+    margin-top: 30px;
+}
+
+/*Header pjesa poshte*/
+.margin-b-15 {
+    margin-bottom: 15px;
+}
+
+/*Llogo ne pjesen pas header-it*/
+.heading-img {
+    height: auto;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.center-text{ 
+    text-align: center; 
+}
+
+/* ----------------------------------- */
+
+/* ------------------------------------ */
+
+/*Footer - ben hijezimin e fotos*/
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -1;
+    opacity: .6;
+}
+
+/*Footer - cakton padingun*/
+.footer-padding {
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+/*Footer - cakton largesine mes elementeve*/
+.padding-t-30 {
+    padding-top: 30px;
+}
+
+/*Footer - cakton largesine mes elementeve*/
+.margin-b-10{
+    margin-bottom: 10px;
+}
+
+/*Footer - fotoja dhe dizajni*/
+footer{ 
+    background: url("../images/footer.jpg") no-repeat; 
+    background-size: cover;  
+    position: relative;  
+    text-align: center;
+    z-index: 1;  
+    font-size: 1.3em; 
+}
+
+/*Footer - ngjyra e paragrafeve*/
+footer,footer p{ 
+    color: #FFFFFF; 
+}
+
+/*Footer - madhesia e logos*/
+#logo-f-size{
+    width: 50px;        
+}
+
+/* ------------------------------------- */
+
+/*Dizajn i pergjithshem*/
+
+body{
+    margin: auto;
+    padding: auto;
+}
+
+body { 
+    font-size: 14px; 
+    font-family: 'Open Sans', sans-serif; 
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    font-weight: 400; 
+}
+
+h1, h2, h5, h4, p, a, ul, li, img{ 
+    margin: 0; 
+    padding: 0; 
+}
+
+h1, h2, h4, h5{
+    line-height: 1.5; 
+    font-weight: inherit;
+}
+
+h1, h2, .font-beyond {
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+}
+
+p { 
+    line-height: 1.7;
+    font-size: 1.05em; 
+    font-weight: 400; 
+    color: #555; 
+}
+
+h1 { 
+    font-size: 7.5em; 
+    line-height: 1.4; 
+}
+
+h2 { 
+    font-size: 4em; 
+    line-height: 1.4; 
+}
+
+h4 {   
+    font-size: 1.8em; 
+}
+
+h5 { 
+    font-size: 1.3em; 
+}
+
+a{ 
+    display: inline-block; 
+    text-decoration: none; 
+    color: inherit; 
+    line-height: 1.5; 
+    -webkit-transition: all .25s ease-in-out; 
+    transition: all .25s ease-in-out;
+}
+
+a:focus, a:active, a:hover,
+a b.light-color:hover { 
+    text-decoration: none; 
+    color: orange;
+}
+
+b {  
+    font-weight: 700; 
+}
+
+img { 
+    width: 100%;
+}
+
+li { 
+    list-style: none; 
+    display: inline-block; 
+    line-height: 2; 
+    font-size: 1.1em; 
+}
+
+b.max-bold { 
+    font-weight: 700; 
+}
+
+section {
+    padding: 100px 0 70px;
+}
+
+/*Ndikon ne largesine mes elementeve ne hapsiren pas heading-ut*/
+.heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* ---------------------------------------- */
+
+
+.story-area {
+    position: relative;
+    background: #fff;
+  }
+  
+
+.left-text { 
+  text-align: left ; 
+}
+
+  .margin-t-30 {
+    margin-top: 30px ;
+}
+
+  .margin-t-50 {
+    margin-top: 50px ;
+  }
+  
+  .margin-b-50 {
+    margin-bottom: 50px ;
+  }
+  .margin-b-30 {
+    margin-bottom: 30px ;
+  }
+ 
+/* ---------------------------------------- */
+
+.background-seller{ 
+    background: 
+    url(../images/prapavi.jpg)  no-repeat; 
+    background-size: cover; 
+    position: relative; z-index: 1; 
+}
+
+.background-seller:after{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: -1; /*hijezimi nuk ndikon te teksti*/
+    background: rgba(0,0,0,.8); 
+}
+.position-relative { 
+  position: relative; 
+  z-index: 1; 
+}
+
+/* #swiper-container-1{
+    height: 350px;
+} */
+
+.padding-b-90 { 
+  padding-bottom: 90px ; 
+}
+
+.padding-b-60 {
+    padding-bottom: 60px ; 
+}
+
+
+.color-ash {
+    color: #aaa;
+}
+  
+.circle-60 {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+}
+
+  .margin-b-20 {
+    margin-bottom: 20px ;
+}
+
+
+.margin-t-20 {
+    margin-top: 20px ;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================ */
+
+
+
+/*section from line 45*/
+.bg-4 {
+    background: 
+    url(../images/slider_2_1920_600.jpg) no-repeat center;  
+    background-size: cover;
+}
+
+.h-500x {
+  height: 500px ;
+}
+
+.main-slider{ 
+  position: relative; 
+  z-index: 1; 
+}
+
+.pos-relative { 
+  position: relative; 
+  z-index: 1; }
+
+.h-100 {
+      height: 100% ;
+}
+
+.dplay-tbl-cell {
+  display: table-cell; 
+  vertical-align: middle; 
+}
+
+
+.pt-90 {
+  padding-top: 90px ;
+}
+
+
+.mb-15 {
+  margin-bottom: 15px ;
+}
+
+/*section from line 58*/
+
+
+
+
+  
+
+
+
+.mt-40 {
+      margin-top: 40px ;
+}
+
+
+.color-primary {
+  color: #EF0031;
+}
+
+.swiper-pagination-bullet{ background: #FFFFFF; opacity: 1;  }
+
+.swiper-pagination-bullet-active{ background: #ED0037; }
+
+
+.story-bg {
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      opacity: .6;
+      width: 200px;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+}
+
+.story-bg.left { 
+    left: 0; 
+}
+
+.story-bg.right { 
+    right: 0;
+}
+
+#our-works{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 500px;
+}
+
+.work-img-s{
+    margin-left: 40px;
+}
+
+.works-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.works-box{
+    max-width: 250px;
+    height: 300px;
+    float: left;
+    margin-right: 45px;
+    margin-top: 20px;
+}
+.works-box img{
+    margin-top: 25px;
+    float: left;
+}
+.works-box p{
+    color: #e6e6e6;
+    float: left;
+    line-height: 2;
+}
+

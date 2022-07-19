@@ -1,0 +1,445 @@
+
+/*Headeri pjesa poshte - foto-ja*/
+/*.background-1 { 
+    background-size: cover; 
+    height: 600px;
+}*/
+
+/*Headeri pjesa poshte
+.main-slider{ 
+    position: relative; 
+    z-index: 1; 
+}
+*/
+
+/*Headeri pjesa poshte - e ben hijezimin e fotos*/
+.main-slider:after{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: -1; /*hijezimi nuk ndikon te teksti*/
+    background: rgba(0,0,0,.4); 
+}
+
+/* style per teskt */
+.text {
+    position: absolute;
+    bottom: 170px;
+    width: 100%;
+  }
+
+/*Kryen funksion te tere faqja*/
+.position-relative { 
+    position: relative; 
+    z-index: 1; 
+}
+
+/*Header - pozita e box-it*/
+.right-area {
+    float: right;
+    bottom: -20;
+    height: 80%;
+    height: 70px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 1.5em;
+}
+
+/*Header - nese gjeresia ndrron box-i largohet*/
+@media only screen and (max-width: 940px) {
+    .right-area {
+        display: none;
+    }
+}
+
+/*Header pjesa poshte - lartesia e tekstit*/
+.height-100 {
+    height: 100%;
+}
+
+/*Lartesia e testiti ndrron nese gjeresia ndrron*/
+@media only screen and (max-width: 940px) {
+    .height-100 {
+        height: 1050px;
+    }
+}
+
+/*Header pjesa poshte - e paraqet kontentin si tabele*/
+.table-model { 
+    display: table;  
+    height: 100%; 
+    width: 100%;
+}
+
+/*Header pjesa poshte - e paraqet kontentin si tabele*/
+.display-table-cell {
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+/*Header pjesa poshte*/
+.margin-t-30 {
+    margin-top: 30px;
+}
+
+/*Header pjesa poshte*/
+.margin-b-15 {
+    margin-bottom: 15px;
+}
+
+/*Llogo ne pjesen pas header-it*/
+.heading-img {
+    height: auto;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.center-text{ 
+    text-align: center; 
+}
+
+/*Footer - ben hijezimin e fotos*/
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -1;
+    opacity: .6;
+}
+
+/*Footer - cakton padingun*/
+.footer-padding {
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+/*Footer - cakton largesine mes elementeve*/
+.padding-t-30 {
+    padding-top: 30px;
+}
+
+/*Footer - cakton largesine mes elementeve*/
+.margin-b-10{
+    margin-bottom: 10px;
+}
+
+/*Footer - fotoja dhe dizajni*/
+footer{ 
+    background: url("../images/footer.jpg") no-repeat; 
+    background-size: cover;  
+    position: relative;  
+    text-align: center;
+    z-index: 1;  
+    font-size: 1.3em; 
+}
+
+/*Footer - ngjyra e paragrafeve*/
+footer,footer p{ 
+    color: #FFFFFF; 
+}
+
+/*Footer - madhesia e logos*/
+#logo-f-size{
+    width: 50px;        
+}
+
+
+/*Dizajn i pergjithshem*/
+
+body { 
+    font-size: 14px; 
+    font-family: 'Open Sans', sans-serif; 
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    font-weight: 400; 
+}
+
+h1, h2, h3, h4, h5, p, a, ul, li, img{ 
+    margin: 0; 
+    padding: 0; 
+}
+
+h1, h3, h2, h4, h5{
+    line-height: 1.5; 
+    font-weight: inherit;
+}
+
+h1, h3, h2, .font-beyond {
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+}
+
+p { 
+    line-height: 1.7;
+    font-size: 1.05em; 
+    font-weight: 400; 
+    color: #555; 
+}
+
+h1 { 
+    font-size: 7.5em; 
+    line-height: 1.4; 
+}
+
+h2 { 
+    font-size: 4em; 
+    line-height: 1.4; 
+}
+
+h3 { 
+    font-size: 3em;  
+}
+
+h2 { 
+    font-size: 1.8em; 
+}
+
+h5 { 
+    font-size: 1.3em; 
+}
+
+a{ 
+    display: inline-block; 
+    text-decoration: none; 
+    color: inherit; 
+    line-height: 1.5; 
+    -webkit-transition: all .25s ease-in-out; 
+    transition: all .25s ease-in-out;
+}
+
+a:focus, a:active, a:hover,
+a b.light-color:hover { 
+    text-decoration: none; 
+    color: orange;
+}
+
+b {  
+    font-weight: 700; 
+}
+
+img { 
+    width: 100%;
+}
+
+li { 
+    list-style: none; 
+    display: inline-block; 
+    line-height: 2; 
+    font-size: 1.1em; 
+}
+
+b.max-bold { 
+    font-weight: 700; 
+}
+
+section {
+    padding: 100px 0 70px;
+}
+
+/*Ndikon ne largesine mes elementeve ne hapsiren pas heading-ut*/
+.heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+body{
+    margin: auto;
+    padding: auto;
+}
+
+/*Ngjyra e pjeses menu-se larte*/
+.background-color{ 
+    background: #F4F8F9; 
+ }
+ 
+/*Ne pjesen e menu-se larte - pozicioni relativ*/
+.sided-90x { 
+    position: relative; 
+}
+ 
+/* Ne pjesen e menu-se larte - madhesia dhe pozitaa e fotografive */
+.sided-90x .s-left { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 90px; 
+    width: 90px; 
+}
+ 
+ /* Ne pjesen e menu-se larte - Pozicioni i tekstit*/
+.sided-90x .s-right { 
+    margin-left: 115px; 
+    min-height: 90px; 
+} 
+
+/*Ne pjesen e menu-se larte - largesia mes elementeve*/
+.margin-b-30 {
+    margin-bottom: 30px ;
+} 
+
+/*Ngjyra e qmimeve*/
+.color-primary {
+    color: #EF0031;
+}
+
+/*Pozicioni i qmimeve*/
+.float-right {
+     float: right ;
+}
+
+/*Distanca mes produktit dhe qmimit*/
+.padding-r-70 {
+    padding-right: 70px ;
+ } 
+
+ 
+.story-area {
+    position: relative;
+    background: #fff;
+ }
+
+ /*pjesa qe e ndan menu e picav me ofertat*/
+ .background-seller1{ 
+    background: url(../images/1900x300bg.jpg)  no-repeat; 
+    background-size: cover; 
+    position: relative; 
+    z-index: 1; 
+ }
+
+ /*Hijezimi i background te shiritit oferta*/
+.background-seller1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0,0,0,.3); 
+ }
+
+/*Madhesia e fontit oferta*/
+.font-60{  
+   font-size: 5em !important; 
+}
+
+/*pjesa e zez qe e ndan menu e ofertave me pije*/
+.background-seller{ 
+    background: url(../images/Pije.jpg)  no-repeat; 
+    background-size: cover; 
+    position: relative; 
+    z-index: 1; 
+ }
+
+/*Madhesia e fontit oferta*/
+.font-30{  
+    font-size: 3em; 
+}
+
+/*Hijezimi i background te shiritit pije*/
+.background-seller:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0,0,0,.5); 
+}
+ 
+/*margin brenda shiritit pije*/
+.margin-b-25 {
+    margin-bottom: 25px ;
+}
+
+/*Pjesa e ofertave - pozicion relativ*/
+.sided-220x { 
+    position: relative; 
+}
+
+/*Pjesa e ofertave - pozicion i fotos*/
+.sided-220x .s-left { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 220px;
+    width: 220px; 
+}
+
+/*Pjesa e ofertave - pozicionon hapsiren mes elementeve*/
+.sided-220x .s-right { 
+    margin-left: 250px; 
+    min-height: 220px; 
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+/* per gjatesin e fotove ne slideshow container */
+.slideshow-container img{
+    height: 600px;
+}
+
+/* butonat anasht */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* pozita e butonit next ne te djatht*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* kur esht tu ndrru me shtu ni bacground coloring ne te zez pak */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* animacionet e ndrrimit te fotos */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* gjat ndrrimit te fotove nddryshimi i opticitetit(dukshmeris) */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
